@@ -1,0 +1,27 @@
+.produktliste {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+/* @media (max-width: 768px) {
+  .produktliste {
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 6;
+
+  border: solid 1px;
+  background-color: beige;
+}
+
+img {
+  max-width: 100%;
+}
+.produktliste p,
+h2,
+h3 {
+  margin: 10%;
+}
