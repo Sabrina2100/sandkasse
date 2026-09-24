@@ -47,12 +47,15 @@ function visData(jason) {
 function visData(jason) {
   console.log(jason);
   jason.forEach((element) => {
-    produktliste.innerHTML += `<article class="produktliste">
+    produktliste.innerHTML += `
+     <a href=productdetails.html?id=${element.id}>
+    <article class="produktliste">
     <img src=${`https://kea-alt-del.dk/t7/images/webp/640/${element.id}.webp`} alt="produktbillede"/>
 <h2>${element.productdisplayname}</h2>
 <h3>${element.model}</h3>
 <p>kr. ${element.pris},-</p>
 <p>${element.udstyr}</p>
-</article>`;
+</article>
+</a>`;
   });
 }
