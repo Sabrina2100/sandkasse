@@ -48,6 +48,6 @@ function visData(jason) {
   console.log(jason);
   jason.forEach((element) => {
     produktliste.innerHTML += `
-     <a href=productlist.html?cat=${element.category}>${element.category}</a>`;
+     <a href=productlist.html?cat=${encodeURI(element.category)}>${element.category}</a>`;
   });
 }
